@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="calculator favicon.png">
+    <link rel="stylesheet" href="style.css"> 
+    
+    <title>Calculator</title>
+</head>
+<body id="body">
+    <div id="calculator">
+        <div id="toggleSwitch">
+            <input type="checkbox" id="check" onclick="darkmode()" style="display: none;">
+            <label for="check" id="switch" ></label>
+            <p id="content" style="padding-left: 5px;" >Light Theme</p>
+        </div>
+        <input  id="equation" class="display" >
+        <input readonly id="result" class="display">
+        <div id="keys" >
+            <button  onclick="clearDisplay()" class="operator">AC</button>
+            <button  onclick="clearLast()" class="operator">C</button>
+            <button  onclick="appendToDisplay(`/`)" class="operator">/</button>
+            <button  onclick="appendToDisplay(`7`)">7</button>
+            <button  onclick="appendToDisplay(`8`)">8</button>
+            <button  onclick="appendToDisplay(`9`)">9</button>
+            <button  onclick="appendToDisplay(`+`)" class="operator">+</button>
+            <button  onclick="appendToDisplay(`4`)">4</button>
+            <button  onclick="appendToDisplay(`5`)">5</button>
+            <button  onclick="appendToDisplay(`6`)">6</button>
+            <button  onclick="appendToDisplay(`-`)" class="operator">-</button>
+            <button  onclick="appendToDisplay(`1`)">1</button>
+            <button  onclick="appendToDisplay(`2`)">2</button>
+            <button  onclick="appendToDisplay(`3`)">3</button>
+            <button  onclick="appendToDisplay(`*`)" class="operator">x</button>
+            <button  onclick="appendToDisplay(`0`)">0</button>
+            <button  onclick="appendToDisplay(`.`)">.</button>
+            <button  onclick="appendToDisplay(`%`)" class="operator">%</button>
+            <button  onclick="calculate()" class="equalto">=</button>
+            
+        
+        </div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>
